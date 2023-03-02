@@ -25,7 +25,6 @@ Technicznie przy wywołaniu `str(obiekt)` wywoływana jest metoda `__str__()` dl
 print(str(5))
 print(5)
 print(int(5).__str__())
-print(str(5))
 ```
 
 Poniżej przedstawiony zostanie fragment kodu, a którym wykorzystane zostanie kilka wybranych metod dla klasy `str`. Dla pełnej listy odsyłam do oficjalnej dokumentacji.
@@ -79,7 +78,7 @@ print(num.zfill(5))
 #### 1.2 Formatowanie łańcuchów znaków.
 
 Formatowanie łańcuchów znaków polega na łączeniu wzorców tekstowych z wartościami innych typów.
-Wiemy już, że możemy to zrobić poprzez uzycie funkcji `print()` np. `print('Adam ma ', 23 ' lata')` i nie jest to najgorszy pomysł. Ma jednak pewne wady, a mianowicie nie mamy tutaj zbyt wielu możliwości określenia formatu, w jakim wartość niebędąca łańcuchem znaków zostanie wypisana, np. z dokładnością do n-znaków po przecinku, wyrównana do strony prawej lub lewej, itd. Z pomocą przychodzą techniki formatowania łańcuchów znaków przedstawione na listingu poniżej.
+Wiemy już, że możemy to zrobić poprzez uzycie funkcji `print()` np. `print('Adam ma ', 23 ,' lata')` i nie jest to najgorszy pomysł. Ma jednak pewne wady, a mianowicie nie mamy tutaj zbyt wielu możliwości określenia formatu, w jakim wartość niebędąca łańcuchem znaków zostanie wypisana, np. z dokładnością do n-znaków po przecinku, wyrównana do strony prawej lub lewej, itd. Z pomocą przychodzą techniki formatowania łańcuchów znaków przedstawione na listingu poniżej.
 
 **Listing 3**
 ```python
@@ -151,7 +150,7 @@ Po więcej przykładów związanych z formatowaniem łańcuchów można udać si
 
 **Zadania**
 
-1. Napisz fragment kodu, który wczyta dwie zmienne z klawiatury:
+1. Napisz fragment kodu, który wczyta trzy zmienne z klawiatury:
    * linię danych rozdzielonych jakimś separatorem (spacja, średnik, itd.)
    * separator źródłowy
    * separator docelowy  
