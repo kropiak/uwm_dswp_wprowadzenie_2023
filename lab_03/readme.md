@@ -150,7 +150,7 @@ Kluczem w słowniku może być każdy niezmienny typ (niemutowalny, ang. immutab
 
 Poniżej fragmenty kodu tworzące słownik oraz pokazujące jak uzyskać dostęp do jego danych.
 
-**Listing 6**
+**Listing 7**
 ```python
 # tworzenie słownika
 slownik = {}
@@ -183,7 +183,7 @@ print(slownik.keys())
 
 Krotki (ang. tuples) są bardzo podobne do list z tą różnicą, że są typem niezmiennym i deklaracja zmiennych zapisywana jest w nawiasach zwykłych, a nie kwadratowych. Również mogą przechowywać wiele typów danych jednocześnie.
 
-**Listing 7**
+**Listing 8**
 ```python
 # tworzymy krotkę
 krotka = (1, 2, 'Jacek', 'ma')
@@ -235,7 +235,7 @@ z = 7
 
 Zbiór (ang. set) to nieuporządkowana kolekcja, której ważną cechą jest to, że znajdują się w niej unikalne elementy (czyli bez powtórzeń). Zbiory obsługują również matematyczne operacje, które znane są z teorii zbiorów: suma, przecięcie, różnica oraz różnica symetryczna.
 
-**Listing 8**
+**Listing 9**
 ```python
 # inicjalizacja zbiorów
 klasa = {'Marek', 'Janek', 'Ania', 'Ewa', 'Marek', 'Ania'}
@@ -266,7 +266,7 @@ Funkcja range() i sposób jej użycia zmieniał się w trakcie rozwoju języka i
 
 Poniższe fragmenty kodu zaprezentują sposób działania funkcji range.
 
-**Listing 9**
+**Listing 10**
 ```python
 from decimal import *
 
