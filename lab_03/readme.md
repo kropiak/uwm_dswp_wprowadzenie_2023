@@ -6,7 +6,7 @@
 
 #### **1.1 Typ `list`**
 
-Lista w języku Python to kolekcja, którą można porównać do tablic w innych językach programowania. Ważną cechą list jest to, że mogą przechowywać różne typy danych (są więc homogeniczne). Rozmiar tablicy ograniczony jest możliwościami sprzętu.
+Lista w języku Python to kolekcja, którą można porównać do tablic w innych językach programowania. Ważną cechą list jest to, że mogą przechowywać różne typy danych (są więc heterogeniczne). Rozmiar tablicy ograniczony jest możliwościami sprzętu.
 Listę możemy zainicjalizować w poniższy sposób:
 
 **Listing 1**
