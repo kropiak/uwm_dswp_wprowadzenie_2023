@@ -298,8 +298,8 @@ x >> n # x przesunięte w prawo o n bitów
 
 # operator przypisania := (nowość w Python 3.8.*)
 # tutaj najpierw nowej zmiennej n przypisana zostaje wartość len(lista) a później
-# dokonana zostaje ewaluacja tej zmiennej czy > 10. Może to oszczędzić w niektórych
-# przypadkach nieco miejsca na deklarację zmiennej jeżeli potrzebna jest tylko w bardzo
+# dokonana zostaje ewaluacja tej zmiennej czy n > 10. Może to oszczędzić w niektórych
+# przypadkach nieco miejsca na deklarację zmiennej, jeżeli potrzebna jest tylko w bardzo
 # ograniczonym zakresie (ang. scope)
 if (n := len(lista)) > 10:
     print(f"List is too long ({n} elements, expected <= 10)")
