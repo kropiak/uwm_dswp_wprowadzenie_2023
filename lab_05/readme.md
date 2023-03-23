@@ -107,7 +107,7 @@ print("Słownik odwrócony")
 print(odwrocone)
 ```
 
-**Listing 5**
+**Listing 6**
 
 Wyrażenia generujące są uproszczoną wersją generatorów (temat generatorów zostanie poruszony przy okazji innego laboratorium).
 
@@ -146,7 +146,7 @@ Ogólna definicja funkcji mówi, że jest to wydzielony blok kodu, który ma rob
 rzeczy na raz, ale ma to robić dobrze. Jest to też niezbędny element metodologii DRY (Don’t Repeat Yourself), czyli tam, gdzie jakaś funkcjonalność będzie wykorzystywana wielokrotnie, możemy zastosować funkcję.
 
 
-**Listing 6**
+**Listing 7**
 ```python
 
 def nazwa_funkcji(arg_pozycyjny, arg_domyslny=wartosc, *arg_4, **arg_5):
@@ -157,7 +157,7 @@ def nazwa_funkcji(arg_pozycyjny, arg_domyslny=wartosc, *arg_4, **arg_5):
 
 Funkcję możemy wywoływać z argumentami lub bez, ale zawsze musimy używać nawiasów (nawet jak nie ma argumentów, wtedy nazywamy ją funkcją bezargumentową). Funkcja może nie zwracać żadnej wartości, może zwracać jedną lub wiele wartości, a w tym ostatnim przypadku wartości będą zwrócone jako krotka wartości.
 
-**Listing 7**
+**Listing 8**
 
 Chcemy zdefiniować funkcję, która będzie obliczać pierwiastki równania kwadratowego:
 ```python
@@ -185,7 +185,7 @@ print(row_kwadratowe(1,4,1))
 ```
 
 
-**Listing 8**
+**Listing 9**
 ```python
 # definiujemy funkcje z wartościami domyślnymi
 import math
@@ -224,7 +224,7 @@ Począwszy od wersji 3.5 wprowadzono możliwość oznaczania zmiennych i funkcji
 
 Type hinting jest dość rozbudowanym zagadnieniem, które cały czas ewoluuje, więc wiedzę należy z każdą wersją Pythona aktualizować. Poniżej zostanie przedstawiony przykład z tylko niewielkim wykorzystaniem możliwości tego modułu.
 
-**Listing 9**
+**Listing 10**
 
 ```python
 from typing import Union, Tuple
@@ -279,16 +279,16 @@ if __name__ == '__main__':
 
 
 **Zadanie 4**  
-Dodaj do funkcji z listingu 7 type hinting.
+Dodaj do funkcji z listingu 8 type hinting.
 
 **Zadanie 5**  
 Napisz funkcję, która:
 * przyjmuje z klawiatury `n`, będące liczbą całkowitą
-* wykonuje `n` rzutów kostką k6 i zwraca liste krotek wartości postaci
-  `(oczka: 6, rzutów: i)` itd., gdzie zmienna i jest ilością rzutów dla tej liczby oczek. 
+* wykonuje `n` rzutów kostką k6 i zwraca listę krotek wartości postaci
+  `('oczka: 6', 'rzutów: i')` itd., gdzie zmienna i jest ilością rzutów dla tej liczby oczek. 
 Dodaj odpowiedni type hinting.
 
-**Listing 10**
+**Listing 11**
 ```python
 # symbol * oznacza dowolną ilość argumentów, które zostaną
 # zapakowane do krotki
@@ -306,9 +306,9 @@ print(ciag(1,2,3,4,5,6,7,8))
 ```
 **Zadanie 6**
 
-Wykorzystując poprzedni przykład z listingu 10 zdefiniuj funkcję, która będzie przyjmowała obiekty typu `str` jako wejście (dowolną liczbę), a będzie zwracała listę tych łańcuchów posortowaną alfabetycznie.
+Wykorzystując poprzedni przykład z listingu 11 zdefiniuj funkcję, która będzie przyjmowała obiekty typu `str` jako wejście (dowolną liczbę), a będzie zwracała listę tych łańcuchów posortowaną alfabetycznie.
 
-**Listing 11**
+**Listing 12**
 ```python
 # symbol ** spowoduje zapakowanie argumentów z kluczem do słownika
 def to_lubie(**rzeczy):
