@@ -133,6 +133,7 @@ C = {x: x&isin; B i x jest liczbą podzielną przez 4}
 Wygeneruj macierz (lista dwupoziomowa) losowych wartości (sprawdź pakiet **[random](https://docs.python.org/3.10/library/random.html)**) 4x4 i wykorzystując Python comprehension zdefiniuj listę, która będzie zawierała tylko elementy znajdujące się na głównej przekątnej.
 
 **Zadanie 3**
+
 Napisz wyrażenie generujące, które będzie zwracało krotkę dwuwartościową postaci: `('Ala', [65, 108, 97]), ('ma', [109, 97]), ('kota.', [107, 111, 116, 97, 46])` dla przykładowego zdania `Ala ma kota.` Dla każdego wyrazu z tekstu przekazanego jako argument wejściowy tego wyrażenia zwraca ten wyraz oraz listę wartości int odpowiadającą kodowi tego znaku z tablicy znaków (zobacz wbudowane `ord(), chr()`).
 
 
@@ -217,9 +218,9 @@ Sugerowanie typów w Pythonie (Python type hinting).
 
 Począwszy od wersji 3.5 wprowadzono możliwość oznaczania zmiennych i funkcji typami oczekiwanymi co nawiązuje do notacji znanej z języków typowanych statycznie.
 
-> Dokumentacja 1: https://peps.python.org/pep-0484/
-> Dokumentacja 2: https://docs.python.org/3/library/typing.html
-> Tutorial 1: https://realpython.com/python-type-checking/
+> Dokumentacja 1: https://peps.python.org/pep-0484/  
+> Dokumentacja 2: https://docs.python.org/3/library/typing.html  
+> Tutorial 1: https://realpython.com/python-type-checking/  
 > Tutorial 2: https://bulldogjob.pl/readme/nie-boj-sie-type-hints-w-pythonie (uwaga na wersję Pythona, o której mowa w artykule!)
 
 Type hinting jest dość rozbudowanym zagadnieniem, które cały czas ewoluuje, więc wiedzę należy z każdą wersją Pythona aktualizować. Poniżej zostanie przedstawiony przykład z tylko niewielkim wykorzystaniem możliwości tego modułu.
