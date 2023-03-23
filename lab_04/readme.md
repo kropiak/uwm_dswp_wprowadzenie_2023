@@ -107,6 +107,7 @@ if __name__ == '__main__':
     # zazwyczaj wywołanie funkcji mani(), która ma za zadanie przetestować funkcjonalność
     # modułu lub wykonać jakieś operacje, które są stosowne tylko w przypadku
     # uruchomienia tego skryptu jako skryptu startowego
+    pass
 
 # możemy też sprawdzić jaką wartość ma zmienna specjalna __name__
 print(__name__)
