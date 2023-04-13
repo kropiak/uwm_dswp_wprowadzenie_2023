@@ -164,10 +164,10 @@ Wykorzystując funkcję `sorted` i funkcję anonimową (lambda) posortuj listę 
 Wykorzystując funkcję `sorted` napisz funkcję, która będzie sortowała listę zawierająca wartości typu `int` oraz `str` (może wystąpić tylko jeden lub oba typy danych). Funkcja posiada atrybut domyślny `reversed=False`, który oznacza, że zwrócona lista będzie najpierw zawierała liczby posortowane rosnąco, a następnie łańcuchy znaków. Wartość `True` tego atrybutu oznaczać będzie w liście wyjściowej najpierw łańcuchy znaków, a później liczby.
 
 **Zadanie 4**  
-Przepisz (ale kod umieść w tym labie) zadanie 4 z labu 1, tak aby gdzie to możliwe użyć funkcji `map`.
+Przepisz (ale kod umieść w tym labie) zadania 1 z labu numer 6, tak aby gdzie to możliwe użyć funkcji `map`.
 
 **Zadanie 5**  
-Napisz kod, który będzie sortował słownik postaci `{'Jan': [1, 3, 4, 7], ...}` na podstawie funkcji przekazanej jako argument, która będzie w stanie operować na liście wartości typu `int`. Wykorzystaj funkcje wbudowane `min, max, sum, abs`.
+Napisz funkcję, która będzie sortowała słownik postaci `{'Jan': [1, 3, 4, 7], ...}` na podstawie funkcji przekazanej jako argument. Ogranicz jej działanie do listy wartości typu `int`. Wykorzystaj funkcje wbudowane `min, max, sum, abs` jako wartości argumentu wejściowego.
 
 
 
