@@ -237,7 +237,7 @@ Napisz funkcję, która z tablicy wartości liczbowych będzie zwracała 10% naj
 Zdefiniuj funkcję o nazwie `create_kolo_fortuny(*args)`, która przyjmuje nieokreśloną listę argumentów pozycyjnych. Z tej listy argumentów tworzony jest obiekt typu `Counter`, a funkcja zwraca obiekt typu `deque` z elementami tegoż licznika.
 
 **Zadanie 7**  
-Korzystając z kodu umieszczonego poniżej oraz wykorzystując funkcję zdefiniowaną w zadaniu 6 napisz rozwiązanie, które będzie operowało na zwracanej kolejce z zadania 6 wykonując jej rotację i wyświetlało tak jak w funkcji `spinit` aktualne wartości "koła fortuny", aż zatrzyma się na właściwym (można przyjąć, że będzie ti pierwszy element kolejki). Wykonaj kilka obrotów kołem dla przetestowania kodu.
+Korzystając z kodu umieszczonego poniżej oraz wykorzystując funkcję zdefiniowaną w zadaniu 6 napisz rozwiązanie, które będzie operowało na zwracanej kolejce z zadania 6, wykonując jej rotację, i wyświetlało tak jak w funkcji `spinit` aktualne wartości "koła fortuny", aż zatrzyma się na właściwym (można przyjąć, że będzie to pierwszy element kolejki). Wykonaj kilka obrotów kołem dla przetestowania kodu (wartości obrotu mogą być "na sztywno" lub losowane).
 
 ```python
 def spinit(ticks: int):
