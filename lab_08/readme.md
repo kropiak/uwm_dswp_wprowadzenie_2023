@@ -232,3 +232,22 @@ Wykorzystaj plik zamówienia.txt z lab 6 i załaduj część jego zawartości (k
 
 **Zadanie 5**  
 Napisz funkcję, która z tablicy wartości liczbowych będzie zwracała 10% najwyższych wartości.
+
+**Zadanie 6**  
+Zdefiniuj funkcję o nazwie `create_kolo_fortuny(*args)`, która przyjmuje nieokreśloną listę argumentów pozycyjnych. Z tej listy argumentów tworzony jest obiekt typu `Counter`, a funkcja zwraca obiekt typu `deque` z elementami tegoż licznika.
+
+**Zadanie 7**  
+Korzystając z kodu umieszczonego poniżej oraz wykorzystując funkcję zdefiniowaną w zadaniu 6 napisz rozwiązanie, które będzie operowało na zwracanej kolejce z zadania 6 wykonując jej rotację i wyświetlało tak jak w funkcji `spinit` aktualne wartości "koła fortuny", aż zatrzyma się na właściwym (można przyjąć, że będzie ti pierwszy element kolejki). Wykonaj kilka obrotów kołem dla przetestowania kodu.
+
+```python
+def spinit(ticks: int):
+    import time
+    import numpy as np
+
+    waits = np.logspace(0.0, 1.0, num=ticks) / ticks
+
+    for tick in range(ticks):
+        print(f'{tick}', end='')
+        time.sleep(waits[tick])
+        print('\r', end='')
+```
