@@ -1,6 +1,6 @@
  Wprowadzenie do języka Python
 
-## Lab 08 - Podstawowe zagadnienia programowania obiektowego w języku Python.
+## Lab 09 - Podstawowe zagadnienia programowania obiektowego w języku Python.
 
 ### **1. Klasa i obiekt.**
 Klasa jest definicją pewnej struktury danych i zachowania, które chcemy zamodelować w postaci zbioru cech (właściwości) oraz metod (zachowanie). Ta definicja podobnie jak definicja funkcji nie powoduje wykonania żadnego kodu związanego z tą definicją, dzieje się to dopiero w momencie stworzenia obiektu klasy.
