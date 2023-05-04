@@ -49,7 +49,7 @@ class Player:
         self.nickname = nickname
 
 p1 = Player()
-# print(p1.nickanem) # błąd !
+# print(p1.nickname) # błąd !
 p1.set_nickname('alias')
 print(p1.nickname)
 ```
@@ -171,4 +171,4 @@ Stwórz klasę o nazwie `Polygon` i zdefiniuj właściwość `points` typu `list
 W klasie `Polygon` przesłoń metodę `__str__()` tak, aby wypisanie `Polygon` wyglądało mniej więcej tak: Polygon[Point(2, 3), Point(1,1), ...].
 
 **Zadanie 7**  
-W klasie `Polygon` przesłoń metodę `__getitem__()`, tak aby możliwe było zwrócenie pojedynczego punktu (item to int) oraz wycinka (item to slice). W tej metodzie obsłuż wyjątek `ValueError` jeżeli nie jest to int lub slice.
+W klasie `Polygon` przesłoń metodę `__getitem__()`, tak aby możliwe było zwrócenie pojedynczego punktu (item to int) oraz wycinka (item to slice). W tej metodzie obsłuż wyjątek `TypeError` jeżeli nie jest to int lub slice.
