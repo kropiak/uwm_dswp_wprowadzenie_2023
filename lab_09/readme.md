@@ -118,6 +118,8 @@ print(adrian.przedstaw_sie())
 
 Przesłanianie metod to dość powszechna praktyka w programowaniu obiektowym, która pozwala na zmianę zachowania obiektu poprzez zmianę implementacji jednej z istniejących metod obiektu nadrzędnego. Wielokrotnie wykorzystywaliśmy ten mechanizm np. poprzez wywołanie metody `print(zmienna)` gdzie `zmienna` może być dowolnego typu, a na wyjściu zawsze otrzymywaliśmy typ `str` tuż przed jej wypisaniem na standardowe wyjście. "Pod spodem" wywoływana jest metoda `__str__()` danego obiektu, która może być przesłonięta na dowolnym etapie grafu dziedziczenia.
 
+> Bardziej szczegółowo zostało to opisane w rozdziale 3 oficjalnej dokumentacji: https://docs.python.org/3/reference/datamodel.html
+
 Poniżej przykład bez przesłaniania metody `__str__()`, która jednak została odziedziczona po klasie `object`.
 
 **_Listing_ 6**
