@@ -19,14 +19,14 @@ Specjalne znaczniki i ich znaczenie w wyrażeniu.
 | `$` | Ten znak powoduje dopasowanie wzorca na końcu sekwencji (kończy się na...)                               
 | `?` | Poprzedzający element jest opcjonalny i dopasowany co najwyżej jeden raz.                                
 | `*` | Poprzedzający element będzie dopasowany zero lub więcej razy. Nazywane dopełnieniem Kleene'a.            
-| `+` | Poprzedzający element będzie dopasowany jeden lub więcej razy.                                           
-| `{n}` | Poprzedzający element pasuje dokładnie n razy.                                   
-| `{n,}` | Poprzedzający element pasuje n lub więcej razy.
-| `{,m}` | Poprzedzający element pasuje co najwyżej m razy. Jest to rozszerzenie GNU.
-| `{n,m}` | Poprzedzający element pasuje co najmniej n razy, ale nie więcej niż m razy.
-| ``\`` | Znak ucieczki (escape). Powoduje potraktowanie kolejnego znaku dosłownie, bez jego specjalnego znaczenia. Należy pamiętać, że bez używania surowych stringów w Pythonie również używamy znaku ``\`` jako znaku ucieczki, więc trzeba go podawać podwójnie lub co wygodniejsze, używać łańcuchów znaków w trybie surowym (raw).
+| `+` | Poprzedzający element będzie dopasowany jeden lub więcej razy, np. `[a-z]+` - co najmniej jedna mała litera                                          
+| `{n}` | Poprzedzający element pasuje dokładnie n razy, np. `[0-9]{3}` - dokładnie 3 cyfry                                
+| `{n,}` | Poprzedzający element pasuje n lub więcej razy. `[0-9]{3,}` - 3 lub więcej cyfr
+| `{,m}` | Poprzedzający element pasuje co najwyżej m razy. Jest to rozszerzenie GNU. `[0-9]{,3}` - co najwyżej 3 cyfry
+| `{n,m}` | Poprzedzający element pasuje co najmniej n razy, ale nie więcej niż m razy, np. `[0-9]{3,4}` - co najmniej 3 cyfry, ale nie więcej niż 4 cyfry
+| ``\`` | Znak ucieczki (escape). Powoduje potraktowanie kolejnego znaku dosłownie, bez jego specjalnego znaczenia. Należy pamiętać, że bez używania surowych stringów w Pythonie również używamy znaku ``\`` jako znaku ucieczki, więc trzeba go podawać podwójnie lub co wygodniejsze, używać łańcuchów znaków w trybie surowym (raw), np. `^\.` - rozpoczynający się od kropki.
 | `[]` | Symbol pozwalający na określenie zbioru wartości. Wyrażenie `[abc]` oznacza `a` lub `b` lub `c`. Możemy również określać zakresy wartości, np. `[0-9]` oznacza wszystkie cyfry od 0 do 9. Jeżeli określenie zbioru jest dość trudne ze względu na jego liczebność, możemy poszukać dopełnienia zbioru: `[^abc]` - wszystkie znaki oprócz a, b lub c.
-|`|`| Określa alternatywę dla podanych wzorców.
+|``|``| Określa alternatywę dla podanych wzorców, np. `Tak|tak` - pasuje do `Tak` lub `tak`.
 |`\d`| Określa cyfrę dziesiętną.
 |`\D`| Określa dowolny znak nie będący cyfrą dziesiętną
 |`\s`| Określa znak niedrukowalny (whitespace) (\t\n\r\f\v)
