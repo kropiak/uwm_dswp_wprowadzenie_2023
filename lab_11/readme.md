@@ -15,36 +15,25 @@ Specjalne znaczniki i ich znaczenie w wyrażeniu.
 | Znacznik | Opis |
 |--|----------------------------------------------------|
 | `.` | Kropka zastępuje dowolny jeden znak poza znakiem nowej linii (w trybie DOTALL również znak nowej linii). 
-| `^` | Ten znak oznacza wyszukiwanie sekwencji rozpoczynającej się od podanego wzorca (rozpoczyna się od ...).  |
+| `^` | Ten znak oznacza wyszukiwanie sekwencji rozpoczynającej się od podanego wzorca (rozpoczyna się od ...).
 | `$` | Ten znak powoduje dopasowanie wzorca na końcu sekwencji (kończy się na...)                               
 | `?` | Poprzedzający element jest opcjonalny i dopasowany co najwyżej jeden raz.                                
 | `*` | Poprzedzający element będzie dopasowany zero lub więcej razy. Nazywane dopełnieniem Kleene'a.            
 | `+` | Poprzedzający element będzie dopasowany jeden lub więcej razy.                                           
-| `{n}` | Poprzedzający element pasuje dokładnie n razy.                                                           
-| `{n,}` | Poprzedzający element pasuje n lub więcej razy.                                                          
-| `{,m}` | Poprzedzający element pasuje co najwyżej m razy. Jest to rozszerzenie GNU.                               
+| `{n}` | Poprzedzający element pasuje dokładnie n razy.                                   
+| `{n,}` | Poprzedzający element pasuje n lub więcej razy.
+| `{,m}` | Poprzedzający element pasuje co najwyżej m razy. Jest to rozszerzenie GNU.
 | `{n,m}` | Poprzedzający element pasuje co najmniej n razy, ale nie więcej niż m razy.
-
-| ``\`` | Znak ucieczki (escape). Powoduje potraktowanie kolejnego znaku dosłownie, bez jego specjalnego znaczenia. Należy pamiętać, że bez używania surowych stringów w Pythonie również używamy znaku `'\'` jako znaku ucieczki, więc trzeba go podawać podwójnie lub co wygodniejsze, używać łańcuchów znaków w trybie surowym (raw).
-
-| `[]` | Symbol pozwalający na określenie zbioru wartości. Wyrażenie `[abc]` oznacza `a` lub `b` lub `c`. Możemy również określać zakresy wartości, np. `[0-9]` oznacza wszystkie cyfry od 0 do 9. Jeżeli określenie zbioru jest dość trudne ze względu na jego liczebność możemy poszukać dopełnienia zbioru: `[^abc]` - wszystkie znaki oprócz a, b lub c.
-
-|`'|'`| Określa alternatywę dla podanych wzorców.
-
+| ``\`` | Znak ucieczki (escape). Powoduje potraktowanie kolejnego znaku dosłownie, bez jego specjalnego znaczenia. Należy pamiętać, że bez używania surowych stringów w Pythonie również używamy znaku ``\`` jako znaku ucieczki, więc trzeba go podawać podwójnie lub co wygodniejsze, używać łańcuchów znaków w trybie surowym (raw).
+| `[]` | Symbol pozwalający na określenie zbioru wartości. Wyrażenie `[abc]` oznacza `a` lub `b` lub `c`. Możemy również określać zakresy wartości, np. `[0-9]` oznacza wszystkie cyfry od 0 do 9. Jeżeli określenie zbioru jest dość trudne ze względu na jego liczebność, możemy poszukać dopełnienia zbioru: `[^abc]` - wszystkie znaki oprócz a, b lub c.
+|``|``| Określa alternatywę dla podanych wzorców.
 |`\d`| Określa cyfrę dziesiętną.
-
-|`\D| Określa dowolny znak nie będący cyfrą dziesiętną
-
-|`\s`| Określa znak niedrukowalny (\t\n\r\f\v)
-
+|`\D`| Określa dowolny znak nie będący cyfrą dziesiętną
+|`\s`| Określa znak niedrukowalny (whitespace) (\t\n\r\f\v)
 |`\S`| Określa dowolny znak nie będący znakiem niedrukowalnym.
-
 |`\w`| Określa znak odpowiadający zbiorowi `str.isalnum()` oraz znak `_`
-
 |`\W`| Określa zbiór, który jest dopełnieniem zbioru `\w`
-
 |`\Z`| Dopasowanie tylko na końcu łańcucha znaków.
-
 |`\A`| Dopasowanie tylko na początku łańcucha.
 
 Pozostałe elementy znajdują się w dokumentacji.
