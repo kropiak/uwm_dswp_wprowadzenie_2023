@@ -26,7 +26,7 @@ Specjalne znaczniki i ich znaczenie w wyrażeniu.
 | `{n,m}` | Poprzedzający element pasuje co najmniej n razy, ale nie więcej niż m razy, np. `[0-9]{3,4}` - co najmniej 3 cyfry, ale nie więcej niż 4 cyfry
 | ``\`` | Znak ucieczki (escape). Powoduje potraktowanie kolejnego znaku dosłownie, bez jego specjalnego znaczenia. Należy pamiętać, że bez używania surowych stringów w Pythonie również używamy znaku ``\`` jako znaku ucieczki, więc trzeba go podawać podwójnie lub co wygodniejsze, używać łańcuchów znaków w trybie surowym (raw), np. `^\.` - rozpoczynający się od kropki.
 | `[]` | Symbol pozwalający na określenie zbioru wartości. Wyrażenie `[abc]` oznacza `a` lub `b` lub `c`. Możemy również określać zakresy wartości, np. `[0-9]` oznacza wszystkie cyfry od 0 do 9. Jeżeli określenie zbioru jest dość trudne ze względu na jego liczebność, możemy poszukać dopełnienia zbioru: `[^abc]` - wszystkie znaki oprócz a, b lub c.
-|<code>&#124;</code>| Określa alternatywę dla podanych wzorców, np. `Tak<code>&#124;</code>tak` - pasuje do `Tak` lub `tak`.
+|<code>&#124;</code>| Określa alternatywę dla podanych wzorców, np. `Tak`<code>&#124;</code>`tak` - pasuje do `Tak` lub `tak`.
 |`\d`| Określa cyfrę dziesiętną.
 |`\D`| Określa dowolny znak nie będący cyfrą dziesiętną
 |`\s`| Określa znak niedrukowalny (whitespace) (\t\n\r\f\v)
