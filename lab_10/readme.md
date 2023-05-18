@@ -1,6 +1,6 @@
- Wprowadzenie do języka Python
+Wprowadzenie do języka Python
 
-## Lab 10 - Omówienie wybranych modułów wbudowanych języka Python.
+## Lab 10 - Omówienie wybranych modułów wbudowanych języka Python. Część 1.
 
 
 ### **1. Moduł `os`.**
