@@ -25,7 +25,7 @@ Specjalne znaczniki i ich znaczenie w wyrażeniu.
 | `{,m}` | Poprzedzający element pasuje co najwyżej m razy. Jest to rozszerzenie GNU.                               
 | `{n,m}` | Poprzedzający element pasuje co najmniej n razy, ale nie więcej niż m razy.
 
-| \ | Znak ucieczki (escape). Powoduje potraktowanie kolejnego znaku dosłownie, bez jego specjalnego znaczenia. Należy pamiętać, że bez używania surowych stringów w Pythonie również używamy znaku `'\'` jako znaku ucieczki, więc trzeba go podawać podwójnie lub co wygodniejsze, używać łańcuchów znaków w trybie surowym (raw).
+| `'\'` | Znak ucieczki (escape). Powoduje potraktowanie kolejnego znaku dosłownie, bez jego specjalnego znaczenia. Należy pamiętać, że bez używania surowych stringów w Pythonie również używamy znaku `'\'` jako znaku ucieczki, więc trzeba go podawać podwójnie lub co wygodniejsze, używać łańcuchów znaków w trybie surowym (raw).
 
 | `[]` | Symbol pozwalający na określenie zbioru wartości. Wyrażenie `[abc]` oznacza `a` lub `b` lub `c`. Możemy również określać zakresy wartości, np. `[0-9]` oznacza wszystkie cyfry od 0 do 9. Jeżeli określenie zbioru jest dość trudne ze względu na jego liczebność możemy poszukać dopełnienia zbioru: `[^abc]` - wszystkie znaki oprócz a, b lub c.
 
@@ -134,5 +134,5 @@ Zapisz do pliku csv datę w formacie RRRR-MM-DD HH:mm:ss, adres ip w formacie z 
 **Zadanie 3**  
 Napisz definicję dowolnej klasy bazując na poprzednich labach. Stwórz jej instancję i zapisz za pomocą modułu `pickle` do pliku binarnego. Załaduj ponownie jej stan.
 
-**Zadanie 4** 
+**Zadanie 4**  
 Stwórz listę kilku instancji obiektów z zadania 3 i ponownie serializuj listę obiektów do pliku i ją ponownie odczytać do tej samej postaci.
