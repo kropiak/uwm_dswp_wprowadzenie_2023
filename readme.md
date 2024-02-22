@@ -1,6 +1,6 @@
 > Kierunek: Data Science w Praktyce  
-> Semestr: 2023L  
-> wersja: 1.0  
+> Semestr: 2024L  
+> wersja: 1.1  
 
 # Wprowadzenie do języka Python
 
