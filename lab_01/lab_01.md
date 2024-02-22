@@ -311,9 +311,9 @@ Python w bardziej złożonych wyrażeniach wykonuje działania w określonej kol
 2.	następnie `*`, `/` oraz `%`
 3.	a dopiero na końcu `+` i `-`
 
-Informacje o epratorach, rozbite niestety w wielu podrodziałach, znajdują się w dokumencie opisującym wbudowane typy danych języka Python: https://docs.python.org/3.10/library/stdtypes.html. Do tego dokumentu będziemy jeszcze wracać.
+Informacje o epratorach, rozbite niestety w wielu podrodziałach, znajdują się w dokumencie opisującym wbudowane typy danych języka Python: https://docs.python.org/3.11/library/stdtypes.html. Do tego dokumentu będziemy jeszcze wracać.
 
-Bardziej szczegółowe informacje na temat priorytetów operatorów można znaleźć tu: https://docs.python.org/3.10/reference/expressions.html#operator-summary
+Bardziej szczegółowe informacje na temat priorytetów operatorów można znaleźć tu: https://docs.python.org/3.11/reference/expressions.html#operator-summary
 
 
 W Pythonie jako fałsz traktowane są:
