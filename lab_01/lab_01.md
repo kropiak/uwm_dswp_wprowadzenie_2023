@@ -38,7 +38,7 @@ Python nie jest jedynym ani też jednoznacznie najlepszym językiem dla data sci
 
 * **Społeczność** – jako język ogólnego zastosowania społeczność Pythona jest bardzo duża co przekłada się na łatwość uzyskania odpowiedzi na pytania, sporą ilość dobrej dokumentacji oraz rozbudowaną listę bibliotek i dodatków.
 
-## 2. Organizacja kodu według PEP8
+## **2. Organizacja kodu według PEP8**
 
 Jak zostało już wspomniane w punkcie 1 zmiany w specyfikacji języka odbywają się poprzez system PEP. Dokument o numerze PEP8 jest jedną (ale nie jedyną) propozycją organizacji kodu języka Python. Oryginalna treść dokumentu dostępna jest pod adresem https://www.python.org/dev/peps/pep-0008/.
 
@@ -209,7 +209,7 @@ dobrze:	zakupy(szynka[1], {jajka: 2})
 ```
 Wszystkie operatory binarne powinny być otoczone pojedynczą spacją.
 
-## 3. Operatory, typy numeryczne oraz typ łańcuchowy.
+## **3. Operatory oraz typy numeryczne.**
 Zanim omówione zostaną typy danych, warto poznać kilka operatorów, które w powiązaniu ze zmiennymi są często używane.
 
 **Listing 12**
@@ -325,99 +325,53 @@ W Pythonie jako fałsz traktowane są:
 * w Pythonie 2 – obiekty posiadające metodę `__nonzero__()`, jeśli zwraca ona `False` lub `0`
 * w Pythonie 3 – obiekty posiadające metodę `__bool__()`, jeśli zwraca ona `False`
 
-### 1.2. Typy liczbowe.
 
 Dwa główne typy liczbowe Pythona to liczba całkowita oraz rzeczywiste, czyli **int** i **float**. Jest jeszcze typ **complex**, który służy do przechowywania wartości liczb zespolonych, ale zapoznanie się z informacjami na jego temat pozostawiam czytelnikowi.
 
 **Listing 13**
 ```python
 calkowita = 5
+calkowita_sep = 1 000 000  # również poprawny zapis, poprawiający czytelność
 rzeczywista = 5.6
 rzeczywista = float(56)
-# powyższy sposób to rzutowanie - konwersja jednego typu w inny o ile to możliwe
+
+# powyższy sposób to rzutowanie (ang. casting) - konwersja jednego typu w inny o ile to możliwe
 # poniżej kolejny przykład
 liczba_str = '123'
 liczba = int(liczba_str)
 print(type(liczba))
 
 # zmienne można również zadeklarować w jednej linii
+# chociaż w praktyce ten zapis oznacza rozpakowanie krotki i zostanie przedstawiony w późniejszym czasie
 a, b = 3, 4
 ```
 
-W przypadku liczb rzeczywistych można również określić precyzję z jaką zostaną wyświetlone (ale nie przechwywane w pamięci), ale stosowny przykład znajduje się w kolejnym podrozdziale.
-
-### **1.3. Typ tekstowy.**
-
-We fragmentach kodu w poprzednich rozdziałach znalazło się już kilka przykładów deklaracji zmiennej typu string. Dla przypomnienia:
+Bibliotek standardowa zawiera również obiekt `Fraction`, który służy do przechowywania wartości w postaci ułamka zwykłego i przykład jego wykorzystania wygląda tak:
 
 **Listing 14**
 ```python
-artykul = """Recenzja "Władcy Pierścieni"."""
-imie = 'Jan'
-hobby = "piłka nożna"
+from fractions import Fraction
+
+
+ulamek = Fraction(2, 3)
+print(ulamek)
+ulamek = Fraction(100, 200)
+print(ulamek)
+
+# wyjście
+# Fraction(2, 3)
+# Fraction(1, 2) nastąpi automatyczne uproszczenie ułamka
 ```
 
-Powyższy fragment to tylko przykład różnych metod deklaracji, w trakcie zajęć będą stosowane apostrofy.
-
-Ciąg tekstowy w Pythonie to tablica znaków co daje z miejsca wiele możliwości manipulacji i dostępu do składowych tego ciągu. Inna ważna cecha stringów to fakt, że po ich zadeklarowaniu nie możemy zmienić zadeklarowanych znaków ciągu, gdyż zmienne typu string są niemutowalne (ang. immutable). Oczywiście możemy nadpisać zmienną nową wartością, czyli zmienić wartość przez przypisanie.
-
-
-**Listing 15**
-```python
-imie = 'Kowalski'
-nazwisko = 'Jan'
-
-# string to tablica znaków więc możemy odwołać się do jej elementów
-print(imie[0])
-
-# indeks elementu możemy również określać jako pozycja od końca ciągu
-print(imie[-1])
-
-# można również pobrać fragment ciągu (slice) określając jako indeks
-# element początkowy i końcowy. Zwróć uwagę na wartość tych indeksów.
-print(imie[0] + imie[-2] + imie[4:6])
-# można również określic tylko jeden z dwóch indeksów
-# co oznacza od elementu o indeksie 3 do końca łańcucha
-print(imie + nazwisko[3:])
-
-# ogólna postać slice
-# [start:stop:step]
-# wartości poszczególnych parametrów slice'a są pomijalne, ale
-# musimy zapisywać drukropki, które informują mechanizm o tym
-# które parametry zostaną uzyte z ich domyślnymi wartościami
-# sprawdź działanie poniższych przykładów
-print(imie[::2])
-print(imie[-2])
-print(imie[:-4:-1])
-print(imie[::-1])
-
-# inny sposób złączania ciągów
-print(imie + ' ' + nazwisko)
-
-# Elementów ciągu nie można zmieniać więc poniższa instrukcja zwróci błąd.
-# nazwisko[0] = "P"
-
-# Potwierdzeniem tego, że ciąg tekstowy jej również obiektem jest możliwość
-# wykonania na nim metod dla tego typu zdefiniowanych. Metoda count() zlicza
-# ilość wystąpień danego ciągu w wartości przechowywanej przez zmienną.
-print(imie.count('z'))
-# Co ciekawe w Pythonie możemy wywoływać funkcje dla danego obiektu już podczas deklaracji
-# co na pierwszy rzut oka może wyglądać dość egzotycznie.
-print('Jesteś szalona!'.count('a'))
-
-# Potwierdzeniem niezmienności zadeklarowanego stringa może być również poniższy kod
-print(imie.lower())
-print(imie)
-
-# Aby zwrócić długość ciągu tekstowego należy posłużyć się wbudowaną funkcją len()
-print(len(nazwisko))
-```
+Więcej informacji można znaleźć w dokumentacji: https://docs.python.org/3.11/library/fractions.html#fractions.Fraction
 
 **Zadania**
 
-0. Przygotuj repozytorium, w którym będziesz przechowywał/a rozwiązania zadań. Rozwiązania umieszczaj w podkatalogach, których nazwy będą postaci `lab_01, ...`. Zaproś prowadzącego do wglądu w w/w repozytorium.
-1. Przestudiuj dokumentację opisującą typ `int` oraz `float` i napisz kod, w którym stworzysz po dwa obiekty typu int i float tak z użyciem różnych wartośxi dla konstruktorów tych typów (np. z inną podstawą niż domyślne 10 dla typu int).
-2. Napisz kod, w którym wykorzystasz poniższe metody dla typów:
+0. Przygotuj repozytorium, w którym będziesz przechowywał/a rozwiązania zadań. Rozwiązania umieszczaj w podkatalogach, których nazwy będą postaci `lab_01, ...`. Zaproś prowadzącego do wglądu do w/w repozytorium.
+1. Przestudiuj dokumentację opisującą typ `int` oraz `float` i napisz kod, w którym stworzysz po dwa obiekty typu int i float z użyciem różnych wartości dla konstruktorów tych typów (np. z inną podstawą niż domyślne 10 dla typu int).
+2. Napisz kod, w którym wykorzystasz poniższe metody:
    * `int.bit_count()`
    * `float.is_integer()`
-3. Przygotuj 4 przykłady kodu, który będzie wykorzystywał operatory bitowe.
+3. Sprawdź w dokumentacji (https://docs.python.org/3.11/library/functions.html#bin) działanie metody `bin`, a następnie wykonaj konwersję dowolnej liczby całkowitej na binarną i ponownie na całkowitą (sprawdź opis konstruktora klasy `int` w dokumentacji).
+4. Przygotuj 4 przykłady kodu, który wykorzystuje operatory bitowe.
+5. Wykorzystaj kod zamiany wartości `float` na wartość hex dostępną pod adresem https://docs.python.org/3.11/library/stdtypes.html#additional-methods-on-float i zapisz własny przykład konwersji wartości zmiennoprzecinkowej do postaci hex i ponownie do wartości typu float. Zapoznaj się również z kolejnym punktem tej dokumentacji o nazwie "Hashing of numeric types".

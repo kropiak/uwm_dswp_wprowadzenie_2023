@@ -15,8 +15,4 @@ Dobrym rozwiązaniem jest również Visual Studio Code, który posiada plugin do
 
 #### 1.3 Interpreter Python
 
-W trakcie zajęć będzie wykorzystywana wersja 3.10.10 (CPython). Jeżeli będzie potrzeba wykorzystania dodatkowych bibliotek, zostanie to wyszczególnione na każdym laboratorium.
-
-
-
-
+W trakcie zajęć będzie wykorzystywana wersja 3.11.8 (CPython). Jeżeli będzie potrzeba wykorzystania dodatkowych bibliotek, zostanie to wyszczególnione na każdym laboratorium.
