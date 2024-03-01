@@ -249,7 +249,7 @@ print('\\sciezka\\rok\\numer\\task')
 # można też wypisać znaki niestandardowe z tablicy Unicode
 print("\u2764")
 print("\u2765")
-print("\u1F602")
+print("\U0001F602")
 
 # tablica unicode w przyjaznej formie: https://symbl.cc/en/unicode/table/
 
@@ -278,6 +278,7 @@ Czy można to zrobić prościej wykorzystując wbudowane metody?
 * `center()`.
 
 4. Wprowadź z klawiatury dowolny łańcuch znaków i zapisz go do zmiennej. Następnie bazując na przykładzie poniżej zapisz również wyniki dla metod `isalpha(), isascii(), isprintable(), istitle(), isupper()`.
+`wejscie = input()`
 `print("Łańcuch {wejscie} isdecimal: {wejscie.isdecimal()}")`.
 
 5. Przejdź na stronę https://pyformat.info/, a następnie zapisz w oddzielnym pliku .py i wykonaj 5 wybranych przykładów formatowania ciągów oznaczonego jako „New”, których nie było w przykładach z tego podrozdziału (np. z wyrównaniem do prawej lub lewej strony, ilością pozycji liczby, znakiem, wypełnieniem spacji itp.). Przerób zaprezentowane tam przykłady na postać z użyciem f-string.
