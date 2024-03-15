@@ -108,7 +108,7 @@ def main():
     pass
 
 if __name__ == '__main__':
-    # zazwyczaj wywołanie funkcji mani(), która ma za zadanie przetestować funkcjonalność
+    # zazwyczaj wywołanie funkcji main(), która ma za zadanie przetestować funkcjonalność
     # modułu lub wykonać jakieś operacje, które są stosowne tylko w przypadku
     # uruchomienia tego skryptu jako skryptu startowego
     main()
@@ -261,7 +261,7 @@ sys.stdout.write(s)
 
 > Zadania
 
-**Zadanie 1** 
+**Zadanie 1**  
 Napisz pętlę, która wyświetla liczby podzielne przez 5 z zakresu [0,50].
 
 **Zadanie 2**  
@@ -297,7 +297,7 @@ Napisz skrypt, który pobiera od użytkownika wartość i:
 Napisz skrypt, który pobiera od użytkownika wartość liczbową, a następnie wyświetla na konsoli zdanie w postaci: "Podaną liczbę można zapisać jako: ...", gdzie zapis będzie w postaci sumy iloczynów liczb dla każdego rzędu. Np. liczba 123: "Podaną liczbę można zapisać jako: 100 * 1 + 10 * 2 + 1 * 3". Do pobrania i wypisania wartości użyj odpowiednio instrukcji `readline()` i `write()` z modułu `sys`).
 
 **Zadanie 7**  
-Wykorzystaj moduł `this` i korzystając z umieszczonego tam słownika kodującego (sprawdź dostępne zmienne modułu `this`) napisz skrypt, który będzie kodował tym słownikiem wpisywane zdanie (przechwytuj z klawiatury). Wypisuj na konsoli zakodowane zdanie.
+Wykorzystaj moduł `this` (sprawdź jego kod źródłowy) i korzystając z umieszczonego tam słownika kodującego (sprawdź dostępne zmienne modułu `this`) napisz skrypt, który będzie kodował tym słownikiem wpisywane zdanie (przechwytuj z klawiatury). Wypisuj na konsoli zakodowane zdanie.
 
 **Zadanie 8**  
 Napisz skrypt, który pobiera z klawiatury zdanie, a na konsoli wyświetla wyrazy z tego zdania posortowane według ich długości rosnąco.
